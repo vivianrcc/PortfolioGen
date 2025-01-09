@@ -1,0 +1,182 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utilizando root para personalizar as propriedades globais */
+:root {
+    --primary-color: #c296b5;
+    --secondary-color: #f480d1;
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: var(--font-family);
+    background-color: #f9f9f9;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Mogra', sans-serif;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #010101;
+}
+
+/* Estilo da seção sobre */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.sobre .img {
+    flex: 1;
+    text-align: center;
+}
+
+.sobre .img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sobre .texto {
+    flex: 2;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilo das seções */
+section.container {
+    padding: 2rem;
+}
+
+section.video {
+    margin: 2rem auto;
+    width: 90%;
+    text-align: center;
+}
+
+section.video iframe {
+    max-width: 100%;
+    height: 320px;
+}
+
+/* Estilo do formulário */
+section.formulario {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+section.formulario form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+section.formulario form input,
+section.formulario form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+section.formulario form button {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section.formulario form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Estilo do mapa */
+section.mapa {
+    text-align: left;
+    padding: 2rem;
+}
+
+section.mapa iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .icon a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Personalizando links para ancoragem */
+a {
+    text-decoration: none;
+}

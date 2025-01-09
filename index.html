@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+
     <title>Vivian Cuentas - Portfólio</title>
 </head>
+
 <body>
     <header>
-        <h1>VIVIAN ROSANA CUENTAS</h1>
+        <h1 class="mogra-regular">Vivian Cuentas</h1>
         <nav>
             <ul>
-                <li><a href="#" id="sobre" aria-label="Ir para seção sobre">Sobre</a></li>
-                <li><a href="#" id="contato" aria-label="Ir para seção de contato">Contato</a></li>
+                <li><a href="#sobre" aria-label="Ir para seção sobre">Sobre</a></li>
+                <li><a href="#contato" aria-label="Ir para seção de contato">Contato</a></li>
             </ul>
         </nav>
     </header>
+
     <main class="page1" id="pagina-sobre">
-        <section class="container">
-            <h2>Sobre: </h2>
+        <section class="container" id="sobre">
+            <h2>Sobre Mim</h2>
             <div class="sobre">
                 <div class="img">
-                    <img src="assets/img/fotodefrente.png.png" alt="Foto de uma mulher com cabelo preto com luzes, olhos castanhos escuros e maquiagem">
+                    <img src="assets/img/fotodefrente.png.png"
+                        alt="Foto de uma mulher com cabelo preto com luzes, olhos castanhos escuros e maquiagem">
                 </div>
                 <div class="texto">
-                    <p></p>
-                    <p></p>
+                    <p>Sou uma profissional em transição de carreira para a área de tecnologia, com foco em
+                        desenvolvimento de software, especialmente no front-end. Apaixonada por design e pela criação de
+                        interfaces intuitivas, vejo na programação a oportunidade de unir criatividade e tecnologia para
+                        desenvolver soluções inovadoras.
+
+                        Recentemente, desenvolvi um interesse por back-end, o que me motivou a embarcar no bootcamp da
+                        Generation, focado em Java. Essa jornada tem sido fundamental para expandir meus conhecimentos e
+                        me tornar uma desenvolvedora mais completa. No programa, estou adquirindo habilidades em Java,
+                        MySQL, React, JavaScript, TypeScript, HTML/CSS e Git.
+                    </p>
+                    <p>Além disso, sou bilíngue, com o espanhol como língua materna, o que me possibilita colaborar de
+                        forma eficaz com equipes e clientes de diferentes culturas.
+                    </p>
                 </div>
             </div>
         </section>
+
         <section class="video">
-            <h2>Meu vídeo favorito:</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nmxQRdDNIss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2 class="mogra-regular">Meu vídeo favorito:</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nmxQRdDNIss"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </section>
     </main>
+
     <main class="page2" id="pagina-contato">
-        <section class="formulario">
+        <section class="formulario" id="contato">
+            <h2>Contato</h2>
             <form>
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" required>
@@ -49,23 +72,27 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        <section class="mapa">
-            <h3>Rua Martiniano</h3>
-            <h3>São Paulo - SP</h3>
-            <iframe width="1200 "
-            height="350"
-            id="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d116832.32916005843!2d-46.74404481490391!3d-23.782648041717643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sR.%20Borba%20-%20grajau!5e0!3m2!1spt-BR!2sbr!4v1736203558966!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-        </section>
     </main>
+
+    <section class="mapa">
+        <h3 class="mogra-regular">Rua Martiniano/São Paulo - SP</h3>
+        <iframe width="800" height="350" id="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d116832.32916005843!2d-46.74404481490391!3d-23.782648041717643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sR.%20Borba%20-%20grajau!5e0!3m2!1spt-BR!2sbr!4v1736203558966!5m2!1spt-BR!2sbr"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
     <footer>
         <div class="icon">
-            <a href="https://github.com/vivianrcc" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
-            <a href="https://linkedin.com/in/vivianrcc" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://youtube.com/@creadaparacrear" target="_blank" rel="noopener noreferrer"><i class='bx bxl-youtube'></i></a>
+            <a href="https://github.com/vivianrcc" target="_blank" rel="noopener noreferrer"><i
+                    class='bx bxl-github'></i></a>
+            <a href="https://linkedin.com/in/vivianrcc" target="_blank" rel="noopener noreferrer"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://youtube.com/@creadaparacrear" target="_blank" rel="noopener noreferrer"><i
+                    class='bx bxl-youtube'></i></a>
         </div>
-        <p>Desenvolvido com amor por Vivian Cuentas</p>
-        <p>&copy; todos os direitos reservados</p>
+        <h3>Feito com 🧡 por Vivian Cuentas</h3>
     </footer>
 
 </body>
+
 </html>
