@@ -21,8 +21,8 @@ function validationNome() {
 function validationEmail() {
     let txtEmail = document.querySelector('#txtEmail');
     let email = document.querySelector('#email').value;
-
-    if (email.indexOf('@') == -1 || email.indexOf('.') == -1) {
+    let regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!regexEmail.test(email)) {
         txtEmail.innerHTML = 'E-mail inválido';
         txtEmail.style.color = 'red';
         txtEmail.style.display = 'block';
@@ -35,7 +35,7 @@ function validationEmail() {
 
 function validaAssunto() {
     let txtAssunto = document.querySelector('#txtAssunto');
-    if (assunto.value.length >= 30) {
+    if (assunto.value.length > 30) {
         txtAssunto.innerHTML = 'Texto muito grande! O assunto deve ter no máximo 30 caracteres';
         txtAssunto.style.color = 'red';
         txtAssunto.style.display = 'block';
@@ -46,12 +46,21 @@ function validaAssunto() {
 }
 
 function enviar() {
-    if (nomeOK == true && emailOK == true  && assuntoOK == true) {
+    if (nomeOK && emailOK && assuntoOK) {
         alert('Formulário enviado com sucesso!');
+        // Limpar os campos após envio
+        nome.value = '';
+        email.value = '';
+        assunto.value = '';
+        // Resetar os flags de validação
+        nomeOK = false;
+        emailOK = false;
+        assuntoOK = false;
     } else {
         alert('Preencha o formulário corretamente antes de enviar...');
     }
 }
+
 
 function mapaZoom() {
     mapa.style.width = '800px';
