@@ -1,11 +1,9 @@
-let nome = document.getElementById('nome');
+let nome = window.document.getElementById('nome');
 let email = document.querySelector('#email');
 let assunto = document.querySelector('#assunto');
-let mensagem = document.querySelector('#mensagem');
 let nomeOK = false;
 let emailOK = false;
 let assuntoOK = false;
-let mensagemOK = false;
 let mapa = document.querySelector('#mapa');
 
 function validationNome() {
@@ -38,7 +36,7 @@ function validationEmail() {
 function validaAssunto() {
     let txtAssunto = document.querySelector('#txtAssunto');
     if (assunto.value.length >= 30) {
-        txtAssunto.innerHTML = 'Texto muito grande! O assunto deve ter no máximo 20 caracteres';
+        txtAssunto.innerHTML = 'Texto muito grande! O assunto deve ter no máximo 30 caracteres';
         txtAssunto.style.color = 'red';
         txtAssunto.style.display = 'block';
     } else {
@@ -48,7 +46,7 @@ function validaAssunto() {
 }
 
 function enviar() {
-    if (nomeOK && emailOK && assuntoOK) {
+    if (nomeOK == true && emailOK == true  && assuntoOK == true) {
         alert('Formulário enviado com sucesso!');
     } else {
         alert('Preencha o formulário corretamente antes de enviar...');
